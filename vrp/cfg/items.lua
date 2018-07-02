@@ -8,6 +8,8 @@ cfg.items = {
   ["benzoilmetilecgonina"] = {"Benzoilmetilecgonina", "Some Benzoic acid ester.", nil, 0.01}, -- no choices
   ["seeds"] = {"Seeds", "Some Weed seeds.", nil, 0.01}, -- no choices
   ["weed_plant"] = {"Weed Plant", "Weed Plant.", nil, 0.50}, -- no choices
+  ["battery_acid"] = {"Battery acid", "Acid from a battery.", nil, 0.50}, -- no choices
+  ["coca_leaf"] = {"Erythroxylum coca", "Coca Leafs.", nil, 0.50}, -- no choices
   ["harness"] = {"Harness", "Some Harness Lysergsäurediethylamid.", nil, 0.01}, -- no choices
   ["AK47"] = {"AK47", "A Russian masterpeice.", nil, 0.01}, -- no choices
   ["M4A1"] = {"M4A1", "Helps give non-Americans freedom.", nil, 0.01}, -- no choices
@@ -42,3 +44,5 @@ load_item_pack("food")
 load_item_pack("drugs")
 
 return cfg
+
+

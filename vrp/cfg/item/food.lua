@@ -86,5 +86,6 @@ items["kebab"] = {"Kebab","", gen("eat",-45,0),0.85}
 items["pdonut"] = {"Premium Donut","", gen("eat",-25,0),0.5}
 items["catfish"] = {"Catfish","", gen("eat",10,15),0.3}
 items["bass"] = {"Bass","", gen("eat",10,15),0.3}
-
+items["peroxide"] = {"Hydrogen Peroxide","", gen("drink",-15,-65),1.5}
+items["gas"] = {"Gasoline","", gen("drink",25,75),2.5}
 return items

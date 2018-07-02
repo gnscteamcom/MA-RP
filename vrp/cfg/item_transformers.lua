@@ -351,6 +351,93 @@ cfg.item_transformers = {
       }
     }
   },
+  -------coke
+    {
+    name="Battery Acid", -- menu name
+    r=255,g=125,b=0, -- color
+    max_units=20,
+    units_per_minute=1,
+    x=2414.3093261719,y=3122.6672363281,z=48.309680938721,
+    radius=2, height=1.0, -- area
+    recipes = {
+      ["Drain fluid"] = { -- action name
+       description="Draining battery...", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={}, -- items taken per unit
+        products={
+		["battery_acid"] = 2
+		}, -- items given per unit
+        aptitudes={} -- optional
+      }
+    }
+  },
+    {
+    name="Cocoa Leaves", -- menu name
+    r=255,g=125,b=0, -- color
+    max_units=60,
+    units_per_minute=5,
+    x=2543.8820800781,y=6594.7856445313,z=13.638829231262,
+    radius=2, height=1.0, -- area
+    recipes = {
+      ["Gather Leaves"] = { -- action name
+       description="Trimming Bush...", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={}, -- items taken per unit
+        products={
+		["coca_leaf"] = 2
+		}, -- items given per unit
+        aptitudes={} -- optional
+      }
+    }
+  },
+   {
+    name="Mix Coke", -- menu name
+    r=255,g=125,b=0, -- color
+    max_units=100000,
+    units_per_minute=100000,
+    x=1099.9091796875,y=-3194.0544433594,z=-38.993461608887,
+    radius=2, height=1.0, -- area
+    recipes = {
+      ["Mix Coke"] = { -- action name
+       description="Mixing Coke...", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={
+		["gas"] = 1,
+		["coca_leaf"] = 2,
+		["battery_acid"] = 1,
+		["peroxide"] = 1
+		}, -- items taken per unit
+        products={
+		["dirty_cocaine"] = 4
+		}, -- items given per unit
+        aptitudes={} -- optional
+      }
+    }
+  },
+   {
+    name="Purify coke", -- menu name
+    r=255,g=125,b=0, -- color
+    max_units=60,
+    units_per_minute=5,
+    x=1095.6253662109,y=-3196.6586914063,z=-38.993469238281,
+    radius=2, height=1.0, -- area
+    recipes = {
+      ["Purify Coke"] = { -- action name
+       description="Trimming Bush...", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={["dirty_cocaine"] = 1}, -- items taken per unit
+        products={
+		["clean_cocaine"] = 1
+		}, -- items given per unit
+        aptitudes={} -- optional
+      }
+    }
+  },
+  -------coke
   -------------------------------drugs
  -- {
    -- name="Robbery Bank", -- menu name
